@@ -1,0 +1,114 @@
+/* index.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.title {
+    margin: 0;
+}
+
+.image-types {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.image-types label {
+    margin: 0 15px;
+    font-size: 16px;
+}
+
+.image-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.image-card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    max-width: 100%; /* Added max-width property */
+    text-align: center;
+}
+
+.image-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+/* Optional: Styles for the image in the header */
+header img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-top: 10px;
+}
+.get-img-btn {
+    margin: 0 auto;
+    display: flex;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 8px;
+    background: #4CAF50;
+    color: antiquewhite;
+    cursor: pointer; 
+    transition: background 0.3s, box-shadow 0.3s; 
+}
+
+.get-img-btn:hover {
+    background: #45a049; /* Darker shade of green on hover */
+    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2); /* Add a slight shadow on hover */
+}
+
+.get-img-btn:active {
+    background: #3e8e41; /* Even darker shade of green when clicked */
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.2); /* Slight shadow when clicked */
+}
+.images-container{
+    display: none; /*flex when displayed*/
+    position: fixed;
+    margin: auto;
+    top: 80px;
+    left: 0;
+    right: 0;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #67595e;
+    border-radius: 5px;
+    width: 420px;
+    height: 490px;
+    background-color: #fff0ee;
+}
+.myimages{
+    max-width: 340px;
+    max-height: 420px;
+    border-radius: 5px;
+}
+.btn-close{
+    position: absolute;
+    top: 2%;
+    right: 2%;
+    background-color: transparent;
+    border: 2px solid #555;
+    color: #555;
+    border-radius: 50%;
+    padding: 2px 6px;
+    font-size: 14px
+}
